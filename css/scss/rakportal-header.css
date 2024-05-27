@@ -1,0 +1,74 @@
+.top-head {
+  width: 100%;
+  float: left;
+  display: block;
+  position: fixed;
+  padding: 10px 0;
+  background: #f6f6f6;
+  z-index: 9;
+}
+
+.logo-top {
+  width: 253px;
+  float: left;
+  display: block;
+}
+
+.chat-button {
+  width: 129px;
+  float: right;
+  display: block;
+}
+
+.chat-button a {
+  background: #231F20;
+  width: 100%;
+  float: left;
+  display: block;
+  height: 38px;
+  text-align: center;
+  color: #fff;
+  padding-top: 13px;
+  border-radius: 117px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  /* align-items: center; */
+  padding-left: 30px;
+}
+
+.chat-button a svg {
+  margin-right: 9px;
+  margin-top: -7px;
+  width: 18px;
+}
+
+.chat-button a svg path {
+  fill: #fff;
+}
+
+.chat-button a span {
+  float: left;
+  color: #fff;
+  line-height: 11px;
+}
+
+.chat-button a:hover {
+  background: #E52632;
+}
+
+@media only screen and (max-width: 786px) {
+  .logo-top {
+    width: 136px;
+    margin-top: 6px;
+  }
+  .chat-button a {
+    height: 30px;
+    padding-top: 8px;
+    padding-left: 16px;
+  }
+  .chat-button {
+    width: 110px;
+  }
+}
+/*# sourceMappingURL=rakportal-header.css.map */

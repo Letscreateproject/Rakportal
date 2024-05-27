@@ -1,0 +1,963 @@
+.trip-top-tab {
+  width: 100%;
+  float: left;
+  padding: 20px 0;
+  margin-top: 60px;
+  display: block;
+}
+
+.trip-top-tab .trip-top-inner {
+  width: 100%;
+  float: left;
+}
+
+.trip-top-tab .trip-top-inner .left-arrow {
+  float: left;
+  display: block;
+  width: 14px;
+}
+
+.trip-top-tab .trip-top-inner .left-arrow:hover svg path {
+  fill: #E52629;
+}
+
+.trip-top-tab .trip-top-inner .right-arrow {
+  float: right;
+  width: 14px;
+  display: block;
+}
+
+.trip-top-tab .trip-top-inner .right-arrow:hover svg path {
+  fill: #E52629;
+}
+
+.tabs {
+  width: 100%;
+  float: left;
+}
+
+.tabs .tabs__nav {
+  position: relative;
+  width: 100;
+}
+
+.tabs .tabs__nav .tabs__nav-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  z-index: 5;
+}
+
+.tabs .tabs__nav .tabs__nav-item {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.tabs .tabs__nav .tabs__nav-item.active {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+  color: #E52629;
+  position: relative;
+}
+
+.tabs .tabs__nav .checkbox-custom {
+  opacity: 0;
+  position: absolute;
+}
+
+.tabs .tabs__nav .checkbox-custom, .tabs .tabs__nav .checkbox-custom-label span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.tabs .tabs__nav .checkbox-custom-label span {
+  font-weight: 400;
+  position: relative;
+  color: #D3CCCC;
+}
+
+.tabs .tabs__nav .checkbox-custom + .checkbox-custom-label span:before {
+  content: '';
+  background: #f6f6f6;
+  border: 1.5px solid #D3CCCC;
+  display: inline-block;
+  vertical-align: middle;
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+  margin-right: 10px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.tabs .tabs__nav .checkbox-custom:checked + .checkbox-custom-label span:before {
+  content: "";
+  font-family: 'FontAwesome';
+  background: #E52629;
+  border: 1.5px solid #E52629;
+}
+
+.tabs .tabs__nav .checkbox-custom:checked + .checkbox-custom-label span {
+  color: #E52629;
+}
+
+.tabs .tabs__nav .checkbox-custom:checked + .checkbox-custom-label span:after {
+  content: '';
+  display: inline-block;
+  height: 24px;
+  position: absolute;
+  width: 15px;
+  background: url(../images/tick.svg);
+  left: 5px;
+  background-repeat: no-repeat;
+  bottom: -5px;
+}
+
+.progress {
+  float: left;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.progress:before {
+  border-bottom: 1.5px solid #D3CCCC;
+  display: block;
+  content: "";
+  width: 100%;
+  right: 0;
+  bottom: 6px;
+  position: absolute;
+  z-index: 2;
+  margin-right: 0;
+}
+
+.progress .active:before {
+  display: block;
+  content: "";
+  width: 70%;
+  left: 0;
+  bottom: 1px;
+  position: absolute;
+  z-index: 2;
+  margin-right: 0;
+  border-bottom: 1.5px solid #E52629;
+}
+
+.progress .active:after {
+  display: block;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #E52629;
+  border-radius: 10px;
+  position: absolute;
+  left: 70%;
+  bottom: -2px;
+  z-index: 2;
+}
+
+.progress .active .percentage-text {
+  position: absolute;
+  left: 68%;
+  font-size: 13px;
+  bottom: -18px;
+  color: #E52629;
+}
+
+.travel-details-inner-block {
+  width: 100%;
+  float: left;
+  background: #fff;
+  padding: 50px 200px;
+  border-radius: 20px;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.sub-head {
+  width: 100%;
+  float: left;
+  display: block;
+  text-align: center;
+  font-size: 36px;
+  color: #231F20;
+  font-weight: 400;
+}
+
+.travelling-u-block {
+  width: 552px;
+  margin: 0px auto;
+}
+
+.travelling-u-block .travel-2-grid {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2] !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+  gap: 0px 30px;
+  grid-auto-rows: minmax(0px, auto);
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block {
+  width: 100%;
+  float: left;
+  border-radius: 20px;
+  background: #F6F6F6;
+  display: block;
+  position: relative;
+  padding: 45px;
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block .info-right-icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 25px;
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block .info-right-icon svg {
+  width: 25px;
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block .info-right-icon svg path {
+  fill: #D9D9D9;
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block p {
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #231F20;
+  font-weight: 400;
+  padding-top: 45px;
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block .family-icon {
+  width: 87px;
+  margin: 0px auto;
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block .family-icon .normal-icon {
+  display: block;
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block .family-icon .active-icon {
+  display: none;
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block .individual-icon {
+  width: 76px;
+  margin: 0px auto;
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block .individual-icon .normal-icon {
+  display: block;
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block .individual-icon .active-icon {
+  display: none;
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block:hover {
+  background: #E52629;
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block:hover .normal-icon {
+  display: none;
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block:hover .active-icon {
+  display: block;
+}
+
+.travelling-u-block .travel-2-grid .travel-grid-block:hover p {
+  color: #fff;
+}
+
+.travelling-u-block .travel-2-grid .active {
+  background: #E52629;
+}
+
+.travelling-u-block .travel-2-grid .active .family-icon .normal-icon {
+  display: none;
+}
+
+.travelling-u-block .travel-2-grid .active .family-icon .active-icon {
+  display: block;
+}
+
+.travelling-u-block .travel-2-grid .active p {
+  color: #fff;
+}
+
+.travelling-u-block .travel-2-grid .active:hover {
+  background: #F6F6F6;
+}
+
+.travelling-u-block .travel-2-grid .active:hover p {
+  color: #231F20;
+}
+
+.travelling-u-block .travel-2-grid .active:hover .normal-icon {
+  display: block;
+}
+
+.travelling-u-block .travel-2-grid .active:hover .active-icon {
+  display: none;
+}
+
+.tavel-list-blcock {
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+.tavel-list-blcock .number-of-trave-block {
+  width: 100%;
+  float: left;
+  background: #F6F6F6;
+  display: block;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.tavel-list-blcock .number-of-trave-block .left {
+  float: left;
+  padding-top: 12px;
+  width: auto;
+}
+
+.tavel-list-blcock .number-of-trave-block .right {
+  width: auto;
+  float: right;
+  background: #FFFFFF;
+  border-radius: 100px;
+  padding: 8px;
+}
+
+.tavel-list-blcock .number-of-trave-block .right .minus-outer {
+  width: 26px;
+  height: 26px;
+  float: left;
+  padding-top: 3px;
+  border-radius: 50%;
+  text-align: center;
+  background: #D9D9D9;
+  color: #fff;
+}
+
+.tavel-list-blcock .number-of-trave-block .right .minus-outer img {
+  width: 11px;
+  margin-left: 8px;
+  margin-top: 8.5px;
+}
+
+.tavel-list-blcock .number-of-trave-block .right .minus-outer:hover {
+  background: #231F20;
+}
+
+.tavel-list-blcock .number-of-trave-block .right .pluse-icon {
+  width: 26px;
+  text-align: center;
+  height: 26px;
+  float: left;
+  padding-top: 4px;
+  border-radius: 50%;
+  background: #E52629;
+  color: #fff;
+}
+
+.tavel-list-blcock .number-of-trave-block .right .pluse-icon img {
+  width: 11px;
+  margin-left: 7.5px;
+  margin-top: 3px;
+}
+
+.tavel-list-blcock .number-of-trave-block .right .pluse-icon:hover {
+  background: #231F20;
+}
+
+.tavel-list-blcock .number-of-trave-block .content-block {
+  width: 55px;
+  float: left;
+  text-align: center;
+  font-size: 13px;
+  line-height: 26px;
+  color: #231F20;
+}
+
+.small-head {
+  width: auto;
+  float: left;
+  font-size: 16px;
+  color: #231F20;
+  display: block;
+}
+
+.travle-list-detaild-setion {
+  width: 100%;
+  padding: 30px 25px 30px;
+  background: #F6F6F6;
+  border-radius: 20px;
+  float: left;
+}
+
+.travle-list-detaild-setion .top-block {
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+.travle-list-detaild-setion .top-block .left {
+  float: left;
+  width: auto;
+}
+
+.travle-list-detaild-setion .top-block .right-block {
+  width: auto;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.travle-list-detaild-setion .top-block .right-block .edit-icon svg {
+  width: 14px;
+  float: left;
+  display: block;
+}
+
+.travle-list-detaild-setion .top-block .right-block .edit-icon svg:hover path {
+  fill: #E52629;
+}
+
+.travle-list-detaild-setion .top-block .right-block .delete-icon svg {
+  width: 12px;
+  float: left;
+  margin-left: 15px;
+  display: block;
+}
+
+.travle-list-detaild-setion .top-block .right-block .delete-icon svg:hover path {
+  fill: #E52629;
+}
+
+.travle-list-detaild-setion .top-block .right-block .tick-icon {
+  width: 13px;
+  float: left;
+}
+
+.form-3-grid {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3] !important;
+      grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px 30px;
+  grid-auto-rows: minmax(0px, auto);
+}
+
+.form-3-grid .form-group {
+  width: 100%;
+  float: left;
+  position: relative;
+  display: block;
+}
+
+.form-3-grid .form-group label {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #231F20;
+  font-weight: 400;
+  display: block;
+}
+
+.form-3-grid .form-group input[type="text"], .form-3-grid .form-group input {
+  display: block;
+  width: 100%;
+  background: none;
+  font-weight: 400;
+  float: left;
+  border-radius: 0;
+  color: #6F6F6F;
+  font-size: 13px;
+  position: relative;
+  padding: 10px 5px 7px 0px;
+  outline: 0;
+  background: none;
+  border-bottom: 1px solid #B4B4B4;
+}
+
+.light-red-bg {
+  background: #F6E8E9;
+}
+
+.traveler-trip-bottom {
+  width: 100%;
+  float: left;
+  display: block;
+  padding-top: 30px;
+}
+
+.traveler-trip-bottom .add-button {
+  float: left;
+  width: auto;
+}
+
+.traveler-trip-bottom .add-button a {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  color: #231F20;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.traveler-trip-bottom .add-button a .pluse-icon {
+  width: 26px;
+  text-align: center;
+  height: 26px;
+  float: left;
+  padding-top: 4px;
+  border-radius: 50%;
+  background: #E52629;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.traveler-trip-bottom .add-button a .pluse-icon svg {
+  line-height: 18px;
+  float: left;
+  text-align: center;
+  width: 100%;
+  margin-top: 3px;
+}
+
+.traveler-trip-bottom .add-button a:hover {
+  color: #E52629;
+}
+
+.traveler-trip-bottom .next-and-back-button {
+  width: 100%;
+  float: left;
+  display: block;
+  margin-top: 35px;
+}
+
+.traveler-trip-bottom .next-and-back-button .back-button {
+  float: left;
+  width: auto;
+  display: block;
+}
+
+.traveler-trip-bottom .next-and-back-button .back-button a {
+  float: left;
+  font-size: 16px;
+  color: #B4B4B4;
+  width: auto;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.traveler-trip-bottom .next-and-back-button .back-button a:hover {
+  color: #E52629;
+}
+
+.traveler-trip-bottom .next-and-back-button .next-button {
+  float: right;
+  width: 100px;
+  display: block;
+}
+
+.traveler-trip-bottom .next-and-back-button .next-button a {
+  width: 100%;
+  float: left;
+  background: #231F20;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border-radius: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 12px 23px;
+}
+
+.traveler-trip-bottom .next-and-back-button .next-button a:hover {
+  background: #E52629;
+}
+
+.traveler-trip-bottom .next-and-back-button .next-button a svg {
+  margin-left: 7px;
+  margin-top: 2px;
+}
+
+.panel-group {
+  width: 100%;
+  float: left;
+}
+
+.panel-group .panel-body {
+  padding: 0px;
+  width: 100%;
+  float: left;
+  display: block;
+  border: 0 !important;
+}
+
+.panel-group .panel-heading {
+  padding: 0px;
+}
+
+.panel-group .panel-title {
+  padding: 0px;
+}
+
+.panel-group .panel-title a {
+  width: 100%;
+  float: left;
+  background: #F6F6F6;
+  display: block;
+  padding: 15px 29px;
+  border-radius: 20px;
+  display: none;
+}
+
+.panel-group .panel-title a .glyphicon {
+  float: right;
+}
+
+.panel-group .panel-title a:hover,
+.panel-group .panel-title a:focus {
+  text-decoration: none;
+}
+
+.panel-group .panel-group .panel {
+  border-radius: 0px;
+}
+
+.panel-group .panel-title a {
+  color: #fff;
+  background-color: #fb3b3b;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.panel-group .panel-title a .right-block {
+  width: auto;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.panel-group .panel-title a .right-block .tick-icon {
+  width: 13px;
+  float: left;
+}
+
+.panel-group .panel-title a .right-block .delete-icon svg {
+  width: 17px;
+  float: right;
+  margin-left: 15px;
+  display: block;
+}
+
+.panel-group .panel-title a.collapsed:hover {
+  color: #232326;
+  background-color: #eeeeee;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.panel-group .panel-title a.collapsed {
+  color: #232326;
+  background: #eee;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.panel-group .panel-title a.collapsed .right-block {
+  display: none;
+}
+
+.panel-group .panel-collapse {
+  border: 0px solid #ddd;
+  border-top: 0px;
+}
+
+.panel-group .panel-default {
+  border: 0px;
+}
+
+.panel-group .panel-collapse {
+  display: block;
+}
+
+.panel-group .panel-default {
+  border: 0px;
+  margin-top: 20px !important;
+  float: left;
+  width: 100%;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.panel-group .panel-title a.collapsed .pluse-acc {
+  float: left;
+  display: block;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.panel-group .panel-title a .pluse-acc {
+  display: none;
+}
+
+.panel-group .panel-title a .minus-acc {
+  float: left;
+  display: block;
+  margin-top: 9px;
+  margin-right: 10px;
+}
+
+.panel-group .panel-title a.collapsed .minus-acc {
+  display: none;
+}
+
+.panel-group .panel-title a.collapsed .pluse-acc {
+  display: block;
+}
+
+@media only screen and (max-width: 1300px) {
+  .travel-details-inner-block {
+    padding: 50px 100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .travel-details-inner-block {
+    padding: 50px 50px;
+  }
+  .tabs .tabs__nav .checkbox-custom, .tabs .tabs__nav .checkbox-custom-label {
+    font-size: 20px;
+  }
+  .tabs .tabs__nav .checkbox-custom:checked + .checkbox-custom-label:after {
+    height: 20px;
+    width: 15px;
+    left: 9px;
+    bottom: 18px;
+  }
+  .tabs .tabs__nav .checkbox-custom + .checkbox-custom-label:before {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .travelling-u-block {
+    width: 450px;
+  }
+  .travelling-u-block .travel-2-grid .travel-grid-block {
+    padding: 40px 45px 30px;
+  }
+  .travelling-u-block .travel-2-grid .travel-grid-block p {
+    padding-top: 25px;
+  }
+  .sub-head {
+    font-size: 20px;
+  }
+  .travelling-u-block .travel-2-grid .travel-grid-block p {
+    font-size: 13px;
+  }
+  .trip-top-tab
+.tabs .tabs__nav .checkbox-custom-label span {
+    width: 100%;
+    display: -ms-inline-grid;
+    display: inline-grid;
+  }
+  .tabs .tabs__nav .checkbox-custom + .checkbox-custom-label span:before {
+    margin: 0px auto;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 6px;
+  }
+  .tabs .tabs__nav .checkbox-custom:checked + .checkbox-custom-label span:after {
+    left: 43%;
+    bottom: 29.5px;
+    background: url(../images/mobile-tick.svg);
+    background-repeat: no-repeat;
+    width: 13.67px;
+    height: 10.37px;
+  }
+  .tabs .tabs__nav .checkbox-custom, .tabs .tabs__nav .checkbox-custom-label span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .panel-group .panel-title a {
+    display: block;
+  }
+  .travle-list-detaild-setion {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .panel-group .panel-title a {
+    color: #232326;
+    background-color: #f7e7e9;
+  }
+  .panel-group .panel-title a {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-group .panel-collapse {
+    display: none;
+  }
+  .panel-group .panel-collapse.collapse.in {
+    display: block;
+  }
+  .panel-group .panel-collapse.collapse.in .travle-list-detaild-setion {
+    background-color: #f7e7e9;
+  }
+  .panel-group .panel-title a.collapsed {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .trip-top-tab {
+    background: #fff;
+  }
+  .travel-details-inner-block {
+    padding: 30px 0px 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .traveler-trip-bottom .add-button {
+    float: none;
+    width: 126px;
+    margin: 0px auto;
+  }
+  .travle-list-detaild-setion {
+    padding: 0px 25px 30px;
+  }
+  .travle-list-detaild-setion .top-block {
+    display: none;
+  }
+  .form-3-grid {
+    margin-top: 10px;
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .travelling-u-block .travel-2-grid {
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+  .tavel-list-blcock .number-of-trave-block {
+    padding: 10px 16px;
+  }
+  .panel-group .panel-title a {
+    padding: 15px 16px;
+  }
+  .travle-list-detaild-setion {
+    padding: 0px 16px 30px;
+  }
+  .traveler-trip-bottom .next-and-back-button .next-button a {
+    font-size: 15px;
+    padding: 9px 23px;
+    padding: 9px 19px;
+  }
+  .traveler-trip-bottom .next-and-back-button .next-button a svg {
+    height: 13px;
+    width: 12px;
+  }
+  .traveler-trip-bottom .next-and-back-button .next-button {
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .travelling-u-block {
+    width: 270px;
+  }
+  .travelling-u-block .travel-2-grid .travel-grid-block .family-icon {
+    width: 48px;
+  }
+  .travelling-u-block .travel-2-grid .travel-grid-block .info-right-icon {
+    width: 16px;
+    right: 12px;
+    top: 5px;
+  }
+  .travelling-u-block .travel-2-grid .travel-grid-block .info-right-icon svg {
+    width: 16px;
+  }
+  .travelling-u-block .travel-2-grid .travel-grid-block .individual-icon {
+    width: 42px;
+  }
+  .travelling-u-block .travel-2-grid {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 0px 20px;
+  }
+  .travelling-u-block .travel-2-grid .travel-grid-block p {
+    padding-top: 13px;
+  }
+  .travelling-u-block .travel-2-grid .travel-grid-block {
+    padding: 25px 10px 10px;
+  }
+  .trip-top-tab {
+    margin-top: 52px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .tabs .tabs__nav .checkbox-custom, .tabs .tabs__nav .checkbox-custom-label span {
+    margin: 1px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .tabs .tabs__nav .checkbox-custom:checked + .checkbox-custom-label span:after {
+    left: 42%;
+    bottom: 27.5px;
+  }
+}
+/*# sourceMappingURL=trip-tab-top.css.map */
