@@ -1,0 +1,45 @@
+.travel-plan-container {
+  width: 800px;
+  margin: 0px auto;
+}
+
+.travel-plan-container .travel-plan-inner {
+  width: 100%;
+  float: left;
+  display: block;
+  padding: 50px;
+  border-radius: 20px;
+  margin-top: 35px;
+  background: #F6F6F6;
+}
+
+.travel-plan-container .travel-plan-inner .travel-plan-twogrid {
+  float: left;
+  width: 100%;
+  display: block;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2] !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+  gap: 20px 50px;
+  grid-auto-rows: minmax(0px, auto);
+}
+
+.travel-plan-bottom {
+  padding-top: 0px;
+}
+
+@media only screen and (max-width: 980px) {
+  .travel-plan-container {
+    width: 100%;
+  }
+  .travel-plan-container .travel-plan-inner .travel-plan-twogrid {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .travel-plan-container .travel-plan-inner {
+    padding: 30px 20px;
+    margin-top: 30px;
+  }
+}
+/*# sourceMappingURL=travel-plan.css.map */
