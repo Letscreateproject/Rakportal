@@ -195,7 +195,7 @@
   border-radius: 20px;
   display: block;
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .sub-head {
@@ -218,7 +218,7 @@
   width: 100%;
   display: block;
   margin-top: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2] !important;
@@ -773,6 +773,52 @@
   border-bottom: 1px solid #B4B4B4;
 }
 
+.traveling-info-acc .panel-title a {
+  background-color: #f7e7e9;
+  display: block;
+  color: #232326;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.traveling-info-acc .panel-title a .minus-acc {
+  float: left;
+  display: block;
+  margin-top: 9px;
+  margin-right: 10px;
+}
+
+.traveling-info-acc .panel-title a.collapsed {
+  border-radius: 20px;
+}
+
+.traveling-info-acc .panel-collapse {
+  display: none;
+}
+
+.traveling-info-acc .panel-collapse.collapse.in {
+  display: block;
+}
+
+.traveling-info-acc .panel-collapse.collapse.in .travle-list-detaild-setion {
+  background-color: #f7e7e9;
+}
+
+.traveling-info-acc .panel-collapse.collapse.in .travle-list-detaild-setion {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.traveling-info-acc .travle-list-detaild-setion {
+  padding-top: 20px;
+}
+
+.traveling-info-acc .travle-list-detaild-setion .form-3-grid {
+  margin-top: 0;
+}
+
 @media only screen and (max-width: 1300px) {
   .travel-details-inner-block {
     padding: 50px 100px;
@@ -938,8 +984,8 @@
     width: 42px;
   }
   .travelling-u-block .travel-2-grid {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     gap: 0px 20px;
   }
   .travelling-u-block .travel-2-grid .travel-grid-block p {

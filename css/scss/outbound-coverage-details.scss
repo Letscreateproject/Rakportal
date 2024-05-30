@@ -1,0 +1,303 @@
+
+
+.policy-details-outer
+{
+    .active{
+        &::before
+        {
+            width:200%;
+        }
+    }
+    .policy-details
+    {
+        &::before{
+            width: 40%;
+        }
+        &::after{
+            left: 38%;
+        }
+        .percentage-text {
+            left: 34%;
+        }
+    }
+  
+}
+
+
+.onboard-main-inner-outer{
+    padding: 50px 35px ;
+    .draft-id-block{
+        width: 100%;
+        display: block;
+        font-size: 13px;
+        color: #231F20;
+        text-align: center;
+        float: left;
+        padding: 20px  0px 0px;
+    }
+    .outonboard-coverage-accrodion{
+        float: left;
+        width: 100%;
+        display: block;
+        margin-top: 30px;
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 0px 30px;
+        grid-auto-rows: minmax(0px, auto);
+        .travle-list-detaild-setion{
+            background: #F6E8E9;
+            padding: 25px 20px;
+      
+        }
+        .onbard-sub-head{
+            width: 100%;
+            float: left;
+            display: block;    font-weight: 600;
+            font-size: 24px;
+            color: #000000;
+            text-align: center;
+            padding-bottom: 3px;
+        }
+        .policy-benafit-block{
+            width: 100%;
+            float: left;
+            display: block;
+
+            .benafit-text{
+                width: 100%;
+                float: left;
+                padding-top: 16px;
+                display: block;
+                font-size: 14px;
+                color: #E52629;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+            .excluding-text{
+                width: 100%;
+                float: left;
+                display: block;
+               text-align: center;
+               font-size: 11px;
+               color: #000;
+            }
+            .padding-top-small{
+                padding-top: 2px;
+            }
+        }
+        .policy-benafit-inner-block{
+            width: 100%;
+            float: left;
+            display: block;
+            background: #FFFFFF;
+            border-radius: 10px;
+            padding: 13px 10px;      margin-bottom: 2px;
+            .form-group {
+                display: block;
+
+            label{
+                font-size: 14px;
+                width: 110px;
+                float: left;
+            
+                span{
+                    float: left;
+                    color: #231F20;
+                    width: 80px;
+                    font-size: 14px;
+                }
+            }
+                input {
+                    padding: 0;
+                    height: initial;
+                    width: initial;
+                    margin-bottom: 0;
+                    display: none;
+                    cursor: pointer;
+                    label {
+                        position: relative;
+                        cursor: pointer;
+                        font-size: 14px;
+                      
+                      }
+                  }
+                  input + label::before{
+                    content:'';
+                    -webkit-appearance: none;
+                    background-color: transparent;
+                    border: 1px solid #E52629;
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                    padding: 8px;
+                    display: inline-block;
+                    position: relative;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    margin-right: 12px;margin-top: 9px;    float: left;
+                  }
+                  input:checked + label:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 10px;
+                    left: 7px;
+                    width: 6px;
+                    height: 12px;
+                    border: solid #E52629;
+                    border-width: 0 1px 1px 0;
+                    transform: rotate(45deg);
+                  }
+                  .benafit-right-amount{
+                    width: auto;
+    text-align: right;
+    float: right;
+    font-size: 14px;
+    color: #231F20;    padding-top: 10px;
+                  }
+              }
+            
+        }
+.view-more-bbutton{
+    width: 100%;
+    float: left;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #E52629;
+}
+.total-premium-section{
+    width: 100%;
+    float: left;
+    display: block;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 20px 12px;
+    background: #E52629;
+    .premum-inner-block{
+        width: 100%;
+        float: left;
+        display: block;
+        padding-bottom: 20px;
+        p{
+            width: 75%;
+            font-size: 14px;
+            color: #fff;    line-height: 18px;
+            float: left;
+        }
+        span{
+            float: right;
+            font-size: 14px;
+            color: #fff;    line-height: 18px;
+            text-align: right;
+            display: block;
+        }
+        &:last-child{
+            padding-bottom: 0;
+        }
+    }
+}
+
+.policy-benafit-select{
+    width: 142px;
+    margin: 0px auto;
+    a{
+        width: 100%;
+        float: left;
+        background: #231F20;
+        display: flex;
+        border-radius: 66px;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        padding: 8px 32px;
+        line-height: 24px;
+        height: 40px;
+        margin-top: 15px;
+        &:hover{
+            background: #E52629;
+        }
+        svg{
+            float: right;
+            margin-left: 5px;
+            margin-top: 2px;
+        }
+        }
+    }
+}
+
+        }
+
+        @media only screen and (max-width:1300px) {  
+        .onboard-main-inner-outer .outonboard-coverage-accrodion .onbard-sub-head {
+            font-size: 19px;
+        }
+
+    }
+
+    @media only screen and (max-width:1200px) {  
+        .onboard-main-inner-outer .outonboard-coverage-accrodion .policy-benafit-inner-block .form-group {
+            display: flex;
+        }
+           .onboard-main-inner-outer .outonboard-coverage-accrodion .onbard-sub-head {
+                font-size: 19px;
+            }
+            .onboard-main-inner-outer .outonboard-coverage-accrodion .travle-list-detaild-setion {
+                padding: 20px 12px;
+            }
+            .onboard-main-inner-outer .outonboard-coverage-accrodion .policy-benafit-inner-block .form-group input + label::before {
+                margin-right: 10px;
+    
+            }
+            .onboard-main-inner-outer {
+                padding: 30px 19px;
+            }
+            .onboard-main-inner-outer .outonboard-coverage-accrodion {
+                gap: 0px 15px;
+
+            }
+            .onboard-main-inner-outer .outonboard-coverage-accrodion .policy-benafit-inner-block .form-group label {
+                width: 107px;
+            }
+            .onboard-main-inner-outer .outonboard-coverage-accrodion .policy-benafit-inner-block .form-group input + label::before {
+                margin-right: 8px;
+            }
+            .onboard-main-inner-outer .outonboard-coverage-accrodion .policy-benafit-inner-block .form-group label span {
+                width: 80px;
+            }
+            .onboard-main-inner-outer .outonboard-coverage-accrodion .total-premium-section .premum-inner-block {
+                display: flex;
+            }
+            .onboard-main-inner-outer .outonboard-coverage-accrodion .policy-benafit-select a {
+                font-size: 16px;
+                padding: 9px 31px;
+                display: flex;
+            }
+            .onboard-main-inner-outer .outonboard-coverage-accrodion .policy-benafit-select a svg {
+                margin-top: 1px;
+                margin-left: 5px;
+                float: right;
+            }
+    }
+
+
+    @media only screen and (max-width:980px) {  
+    .onboard-main-inner-outer .outonboard-coverage-accrodion {
+        gap: 0px 15px;
+        margin-top: 0;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .onboard-main-inner-outer .outonboard-coverage-accrodion .policy-benafit-inner-block .form-group {
+        display: block;
+    }
+    .onboard-main-inner-outer .outonboard-coverage-accrodion .policy-benafit-block .excluding-text {
+        text-align: left;
+    }
+    .onboard-main-inner-outer .outonboard-coverage-accrodion .policy-benafit-block .benafit-text {
+        text-align: left;
+    }
+    .onboard-main-inner-outer .outonboard-coverage-accrodion .travle-list-detaild-setion {
+        padding: 0px 12px 20px;
+    }
+}

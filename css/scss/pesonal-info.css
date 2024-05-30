@@ -1,0 +1,248 @@
+.personal-info-block .personal-travel::before {
+  width: 200%;
+}
+
+.personal-info-block .personal-info::before {
+  width: 45%;
+}
+
+.personal-info-block .personal-info::after {
+  left: 41%;
+}
+
+.personal-info-block .personal-info .percentage-text {
+  left: 37%;
+}
+
+.travel-plan-icon-block .travel-2-grid .travel-grid-block .individual-icon {
+  width: 93px;
+}
+
+.travel-info-main-content-block {
+  width: 100%;
+  float: left;
+  display: block;
+  background: #F6F6F6;
+  border-radius: 20px;
+  padding: 60px  50px;
+}
+
+.travel-info-main-content-block .travel-info-2-grid {
+  float: left;
+  width: 100%;
+  display: block;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2] !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+  gap: 20px 30px;
+  grid-auto-rows: minmax(0px, auto);
+}
+
+.travel-info-main-content-block .date-grid-block {
+  margin-top: 20px;
+}
+
+.travel-info-main-content-block .duration-block {
+  width: 48%;
+  float: left;
+  display: block;
+  margin-top: 20px;
+}
+
+.travel-info-main-content-block .duration-block .trip-duration {
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+.travel-info-main-content-block .duration-block .trip-duration .left-content {
+  float: left;
+  width: 50%;
+  float: left;
+  font-size: 16px;
+  color: #000;
+  display: block;
+  padding-top: 11px;
+}
+
+.travel-info-main-content-block .duration-block .trip-duration .right-content-block {
+  float: right;
+  width: 145px;
+  display: block;
+  background: #F6F6F6;
+  border-radius: 10px;
+  text-align: center;
+  height: 40px;
+  padding-top: 11px;
+  font-size: 13px;
+  color: #231F20;
+  border: 1px solid #B4B4B4;
+}
+
+.travel-info-main-content-block .duration-block .contact-number-block {
+  width: 100%;
+  float: left;
+  padding-top: 20px;
+  position: relative;
+}
+
+.travel-info-main-content-block .duration-block .contact-number-block input[type="text"], .travel-info-main-content-block .duration-block .contact-number-block input {
+  padding: 14px 5px 7px 40px;
+}
+
+.travel-info-main-content-block .duration-block .contact-number-block .contact-number-absolute {
+  position: relative;
+  left: 0;
+  bottom: 23px;
+  font-size: 13px;
+  color: #231F20;
+}
+
+.personal-info-block {
+  width: 100%;
+  float: left;
+  display: block;
+  padding-top: 20px;
+}
+
+.personal-info-block .form-group {
+  display: block;
+}
+
+.personal-info-block .form-group label {
+  font-size: 13px;
+}
+
+.personal-info-block .form-group label span {
+  color: #E52629;
+}
+
+.personal-info-block .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.personal-info-block .form-group input label {
+  position: relative;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.personal-info-block .form-group input + label::before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #E52629;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 8px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-top: -4px;
+}
+
+.personal-info-block .form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 7px;
+  width: 6px;
+  height: 12px;
+  border: solid #E52629;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.travel-inform-bottom-mrg {
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+.travel-inform-bottom-mrg .next-and-back-button {
+  margin-top: 0;
+}
+
+.travelling-u-block .travel-2-grid.top-gird {
+  margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 980px) {
+  .travel-info-main-content-block .travel-info-2-grid {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .travel-info-main-content-block {
+    border-radius: 20px;
+    padding: 30px 20px;
+  }
+  .travel-info-main-content-block .date-grid-block {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px 20px;
+  }
+  .travel-inform-bottom-mrg {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 30px;
+  }
+  .personal-info-block {
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .travel-plan-icon-block .travel-2-grid .travel-grid-block .individual-icon {
+    width: 52px;
+  }
+  .travel-info-main-content-block .duration-block {
+    width: 100%;
+    float: left;
+    display: block;
+    margin-top: 20px;
+  }
+  .travel-info-main-content-block .duration-block .trip-duration .right-content-block {
+    width: 47%;
+  }
+  .travelling-u-block .travel-2-grid.top-gird {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .personal-info-block .form-group label {
+    font-size: 13px;
+  }
+  .travel-info-main-content-block .duration-block .trip-duration .right-content-block {
+    width: 45%;
+  }
+  .travel-info-main-content-block .duration-block .trip-duration .left-content {
+    width: 53%;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .personal-info-block .form-group label {
+    font-size: 13px;
+  }
+  .personal-info-block .form-group label span {
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    padding-left: 33px;
+  }
+  .personal-info-block .form-group input + label::before {
+    margin-top: 4px;
+  }
+}
+/*# sourceMappingURL=pesonal-info.css.map */

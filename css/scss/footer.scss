@@ -400,6 +400,84 @@ svg path{
 }
 .mobile-logo-footer-show
 {display: none;}
+
+footer .footer-main-bottom{
+  width: 100%;
+  float: left;
+  display: block;
+  background: #434343;
+  padding: 35px 0;
+
+.footer-2-bottom{
+  width: 100%;
+  float: left;
+  display: flex;
+  .footer-logo-top{
+    width: 207px;
+    float: left;
+    display: block;
+  }
+  .footer-middle-setion{
+    width: 65%;
+    float: left;    padding-top: 7px;
+    text-align: center;
+    ul{
+      display: inline-flex;
+      li{
+        padding-left: 10px;
+        padding-right: 10px;
+        a{
+          font-size: 12px;
+          color: #fff;
+        }
+      }
+    }
+  }.footer-social-icons{
+    float: right;
+    width:auto;padding-top: 9px;
+    ul{
+      li{
+        width: auto;
+        display: inline-block;
+        margin-left: 10px;
+        a{
+          width: 18px;
+          float: left;
+          height: 18px;
+          background: #fff;
+          border-radius: 50%;
+          svg{
+            width: 10px;
+            margin-left: 4px;
+            float: left;
+            margin-top: 4px;
+            
+          }
+          .social-icon2{
+            margin-left: 4.5px;
+            margin-top: 5px;
+        }
+        .social-icon3{
+            margin-left: 4px;
+            margin-top: 5.34px;
+        }
+        .social-icon4{
+            margin-left: 4px;
+            margin-top: 2px;
+        }
+        .social-icon5{  
+    margin-left: 4px;
+    margin-top: 3.33px;
+}
+          &:hover{
+            background: #EB151D;
+          }
+        }
+      }
+    }
+  }
+}
+}
 @media only screen and (max-width:1700px) {
     footer .footer-container {
         width: 95%;

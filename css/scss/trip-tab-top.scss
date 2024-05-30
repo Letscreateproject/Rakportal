@@ -179,7 +179,7 @@ float: left;
     border-radius: 20px;
     display: block;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .sub-head{
     width: 100%;
@@ -198,7 +198,7 @@ float: left;
     width: 100%;
     display: block;
     margin-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 0px 30px;
@@ -686,7 +686,54 @@ label {
     }
 }
 
+.traveling-info-acc{
+
+         .panel-title 
+         { a
+             {        background-color: #f7e7e9;
+        display: block;        color: #232326;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+       
+        .minus-acc {
+            float: left;
+            display: block;
+            margin-top: 9px;
+            margin-right: 10px;
+        }
+         }
+         a.collapsed{
+            border-radius: 20px;
+         }
+    }
+ .panel-collapse {
+        display: none;
+    }
+  .panel-collapse.collapse.in {
+        display: block;
+    }
+ .panel-collapse.collapse.in .travle-list-detaild-setion {
+        background-color: #f7e7e9;
+    }
+    .panel-collapse.collapse.in   .travle-list-detaild-setion {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .travle-list-detaild-setion{
+        padding-top: 20px;
+    .form-3-grid{
+        margin-top: 0;
+    }
+}
+}
+
+
+
+
 @media only screen and (max-width:1300px) { 
+
 
 .travel-details-inner-block {
     padding: 50px 100px;
@@ -850,8 +897,8 @@ label {
             width: 42px;
         }
         .travelling-u-block .travel-2-grid {
-            margin-top: 50px;
-            margin-bottom: 50px;
+            margin-top: 40px;
+            margin-bottom: 40px;
             gap: 0px 20px;
     
         }    .travelling-u-block .travel-2-grid .travel-grid-block p {
