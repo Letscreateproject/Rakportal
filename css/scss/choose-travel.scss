@@ -1,0 +1,209 @@
+
+    .choose-grid-outer{
+    width: 760px;
+    margin: 0px auto;
+
+ .travel-2-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        .travel-grid-block {
+            padding: 45px 45px 39px;
+            p {
+                padding-top: 25px;
+            }
+        }
+
+    }
+
+}
+.schengen p{
+    padding-top: 36px !important;
+}
+.gcc p {
+    padding-top: 52px !important;
+}
+.hajj-and-umrah p{
+    padding-top: 36px !important;
+}
+.uae-inbound p{
+    padding-top: 40px !important;
+}
+
+.choose-two-gird-outer{
+    width: 495px;
+    margin: 0px auto;
+    .travel-2-bt-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        margin-top: 0;    margin-bottom: 26px;
+    }
+
+}
+
+.choose-grid-outer{ 
+    .travel-grid-block.active{
+    .world-wide-icon{
+        background: url(../images/worldwide-hover.svg);
+        background-repeat: no-repeat;  width: 93px;height: 93px;
+    }
+ .schengen-icon{
+        background: url(../images/schengen-hover-icon.svg);
+        width: 93px;
+        height: 82px; background-repeat: no-repeat;margin: 0px auto;
+    }
+    .gcc-icon{
+        width: 83px; background-repeat: no-repeat;margin: 0px auto;
+        height:66px;   background: url(../images/gcc-hover-icon.svg);
+        
+    }
+    .hajj-and-umarh-icon{
+        width: 80px; background-repeat: no-repeat;margin: 0px auto;
+        height:85px;   background: url(../images/hajj-and-umarh-hover-con.svg);
+    }
+    .uae-inbound-icon{
+        width:90px; background-repeat: no-repeat;margin: 0px auto;
+        height:82px;   background: url(../images/uae-inbound-hover-icon.svg);
+    }
+    
+}
+.travel-grid-block {
+    .world-wide-icon{
+        background: url(../images/worldwide-hover.svg);
+        background-repeat: no-repeat;  width: 93px;height: 93px;
+    }
+.schengen-icon{margin: 0px auto;
+    background: url(../images/schengen-icon.svg);
+    width: 93px;
+    height: 82px; background-repeat: no-repeat;
+}
+.gcc-icon{
+    width: 83px; background-repeat: no-repeat;margin: 0px auto;
+    height:66px;   background: url(../images/gcc-icon.svg);
+    
+}
+.hajj-and-umarh-icon{
+    width: 80px; background-repeat: no-repeat;margin: 0px auto;
+    height:85px;   background: url(../images/hajj-and-umarh-icon.svg);
+}
+.uae-inbound-icon{
+    width:90px; background-repeat: no-repeat;margin: 0px auto;
+    height:82px;   background: url(../images/uae-inbound-icon.svg);
+}
+
+&:hover {
+    .schengen-icon{
+        background: url(../images/schengen-hover-icon.svg);
+        width: 93px;
+        height: 82px; background-repeat: no-repeat;margin: 0px auto;
+    }
+    .gcc-icon{
+        width: 83px; background-repeat: no-repeat;margin: 0px auto;
+        height:66px;   background: url(../images/gcc-hover-icon.svg);
+        
+    }
+    .hajj-and-umarh-icon{
+        width: 80px; background-repeat: no-repeat;margin: 0px auto;
+        height:85px;   background: url(../images/hajj-and-umarh-hover-con.svg);
+    }
+    .uae-inbound-icon{
+        width:90px; background-repeat: no-repeat;margin: 0px auto;
+        height:82px;   background: url(../images/uae-inbound-hover-icon.svg);
+    }
+    
+}
+
+}
+
+}
+
+
+.world-wide-icon{
+    width: 93px;    margin: 0px auto;
+}
+
+.schengen-icon{
+    width: 93px;    margin: 0px auto;
+}
+
+.choose-grid-outer .travel-2-grid{
+    margin-bottom: 26px;
+}
+
+@media only screen and (max-width: 980px) 
+{
+    .choose-grid-outer {
+        width: 600px;
+    }
+    .choose-two-gird-outer {
+        width: 396px;
+    }
+    .choose-grid-outer .travel-2-grid .travel-grid-block {
+        padding: 35px 20px 27px;
+    }
+    .hajj-and-umrah p {
+        padding-top: 10px !important;
+    }.uae-inbound p {
+        padding-top: 16px !important;
+    }
+    .choose-grid-outer .travel-2-grid .travel-grid-block p {
+        padding-top: 14px;
+    }
+    .schengen p {
+        padding-top: 15px !important;
+    }
+    .gcc p {
+        padding-top: 32px !important;
+    }
+    .choose-grid-outer .travel-2-grid {
+        margin-bottom: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) 
+{
+    .choose-grid-outer {
+        width: 100%;
+    }
+    .choose-two-gird-outer {
+        width: 65%;
+    }
+    .choose-grid-outer .travel-grid-block .world-wide-icon {
+        width: 70px;
+        height: 58px;
+        background-size: contain;
+    }
+    .choose-grid-outer .travel-grid-block .schengen-icon {
+        width: 59px;
+        height: 57px;
+        background-size: contain;
+    }
+    .choose-grid-outer .travel-grid-block .gcc-icon {
+        width: 50px;
+        height: 40px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .choose-grid-outer .travel-grid-block .hajj-and-umarh-icon {
+        width: 60px;
+        height: 62px;
+        background-size: cover;
+    }
+    .choose-grid-outer .travel-grid-block .uae-inbound-icon {
+        width: 60px;
+        height: 57px;        background-size: cover;
+    }
+    .choose-grid-outer .travel-2-grid .travel-grid-block {
+        padding: 34px 20px 20px;
+    }
+    .choose-grid-outer .travel-2-grid {
+        margin-bottom: 8px;        gap: 0px 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  
+    .choose-grid-outer .travel-2-grid .travel-grid-block {
+        padding: 34px 4px 20px;
+    }  .choose-grid-outer .travel-2-grid .travel-grid-block p {
+        padding-top: 12px;
+    }
+}

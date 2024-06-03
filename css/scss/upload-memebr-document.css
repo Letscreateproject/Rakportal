@@ -1,0 +1,279 @@
+.upload-menmebr-main-outer {
+  padding: 60px 237px;
+  /* 
+  The project specific CSS starts here
+  This is the minimum CSS that you will need in order for this to work
+  */
+}
+
+.upload-menmebr-main-outer .acctment-bar {
+  width: 100%;
+  float: left;
+  display: block;
+  background: #E52629;
+  border-radius: 20px;
+  padding: 14px 28px;
+}
+
+.upload-menmebr-main-outer .acctment-bar .name-block {
+  width: auto;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 11px;
+  display: block;
+}
+
+.upload-menmebr-main-outer .acctment-bar .attachment-button {
+  width: auto;
+  float: right;
+  padding: 12px 17px;
+  display: block;
+  color: #231F20;
+  border-radius: 100px;
+  font-weight: 600;
+  background: #fff;
+}
+
+.upload-menmebr-main-outer .acctment-bar .attachment-button svg {
+  float: left;
+  margin-right: 6px;
+  display: block;
+}
+
+.upload-menmebr-main-outer .tabbed-content {
+  margin-top: 27px;
+  width: 100%;
+  float: left;
+}
+
+.upload-menmebr-main-outer .tabs ul {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4] !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px 30px;
+  grid-auto-rows: minmax(0px, auto);
+}
+
+.upload-menmebr-main-outer .tabs ul li {
+  float: left;
+  width: 100%;
+}
+
+.upload-menmebr-main-outer .tabs ul li a {
+  background: #F6F6F6;
+  border-radius: 20px;
+  float: left;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.upload-menmebr-main-outer .tabs ul li a .tittle-block {
+  width: 100%;
+  font-size: 16px;
+  color: #231F20;
+  float: left;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.upload-menmebr-main-outer .tabs ul li a .content-block {
+  width: 100%;
+  font-size: 16px;
+  padding-top: 23px;
+  font-weight: 400;
+  color: #A2A0A1;
+  float: left;
+  text-align: center;
+}
+
+.upload-menmebr-main-outer .tabs ul li a .active-tick {
+  width: 12px;
+  display: none;
+  margin: 0px auto;
+}
+
+.upload-menmebr-main-outer .tabs ul li a .upload-icon {
+  width: 21px;
+  margin: 0px auto;
+  display: block;
+}
+
+.upload-menmebr-main-outer .tabs ul li a .content-block-noraml {
+  display: block;
+}
+
+.upload-menmebr-main-outer .tabs ul li a .content-block-active {
+  display: none;
+}
+
+.upload-menmebr-main-outer .tabs ul li a:hover {
+  background: #F6E8E9;
+  color: #231F20;
+  border-radius: 20px;
+}
+
+.upload-menmebr-main-outer .tabs ul li a:hover .active-tick {
+  width: 12px;
+  margin: 0px auto;
+  display: block;
+}
+
+.upload-menmebr-main-outer .tabs ul li a:hover .upload-icon {
+  display: none;
+}
+
+.upload-menmebr-main-outer .tabs ul li a:hover .content-block-active {
+  display: block;
+}
+
+.upload-menmebr-main-outer .tabs ul li a:hover .content-block-noraml {
+  display: none;
+}
+
+.upload-menmebr-main-outer .tabs ul li a.active {
+  background: #F6E8E9;
+  color: #231F20;
+  border-radius: 20px;
+}
+
+.upload-menmebr-main-outer .tabs ul li a.active .active-tick {
+  width: 12px;
+  margin: 0px auto;
+  display: block;
+}
+
+.upload-menmebr-main-outer .tabs ul li a.active .upload-icon {
+  display: none;
+}
+
+.upload-menmebr-main-outer .tabs ul li a.active .content-block-active {
+  display: block;
+}
+
+.upload-menmebr-main-outer .tabs ul li a.active .content-block-noraml {
+  display: none;
+}
+
+.upload-menmebr-main-outer .tabs ul li a:hover, .upload-menmebr-main-outer .tabs ul li a.active {
+  background: #F6E8E9;
+  color: #231F20;
+  border-radius: 20px;
+}
+
+.upload-menmebr-main-outer .item {
+  margin-bottom: 2px;
+}
+
+.upload-menmebr-main-outer .item::before {
+  cursor: pointer;
+  font-weight: bold;
+  background: #eee;
+  padding: 0.5em;
+  display: block;
+}
+
+.upload-menmebr-main-outer .item.active::before {
+  background: #444;
+  color: #eee;
+}
+
+.upload-menmebr-main-outer .item.active .item-content {
+  padding: 1em;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.upload-menmebr-main-outer .item.active .item-content .upload-tab-grid {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2] !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+  gap: 20px 30px;
+  grid-auto-rows: minmax(0px, auto);
+}
+
+@media all and (min-width: 980px) {
+  .upload-menmebr-main-outer .item.active .item-content {
+    padding-top: 0;
+  }
+  .upload-menmebr-main-outer .tabs-side .tabs li {
+    margin-bottom: 2px;
+  }
+}
+
+.upload-menmebr-main-outer .tabbed-content .tabs {
+  display: none;
+}
+
+.upload-menmebr-main-outer .tabbed-content .item {
+  min-height: 2em;
+}
+
+.upload-menmebr-main-outer .tabbed-content .item::before {
+  content: attr(data-title);
+}
+
+.upload-menmebr-main-outer .tabbed-content .item .item-content {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+
+.upload-menmebr-main-outer .tabbed-content .item.active .item-content {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+
+@media all and (min-width: 980px) {
+  .upload-menmebr-main-outer .tabbed-content .tabs {
+    display: block;
+  }
+  .upload-menmebr-main-outer .tabbed-content .tabs li {
+    display: inline-block;
+  }
+  .upload-menmebr-main-outer .tabbed-content .tabs li a {
+    display: block;
+  }
+  .upload-menmebr-main-outer .tabbed-content .item {
+    min-height: 0;
+  }
+  .upload-menmebr-main-outer .tabbed-content .item::before {
+    display: none;
+  }
+  .upload-menmebr-main-outer .tabbed-content.tabs-side .tabs {
+    width: 150px;
+    float: left;
+  }
+  .upload-menmebr-main-outer .tabbed-content.tabs-side .tabs li {
+    display: block;
+  }
+  .upload-menmebr-main-outer .tabbed-content.tabs-side .item {
+    margin-left: 150px;
+  }
+}
+
+.draft-id-block {
+  float: left;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 20px 0 35px;
+  text-align: center;
+}
+/*# sourceMappingURL=upload-memebr-document.css.map */

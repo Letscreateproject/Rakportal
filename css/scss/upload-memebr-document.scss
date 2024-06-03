@@ -1,0 +1,248 @@
+.upload-menmebr-main-outer{
+    padding:60px 237px;
+.acctment-bar{
+    width: 100%;
+    float: left;
+    display: block;
+    background: #E52629;
+    border-radius: 20px;
+    padding: 14px 28px;
+    .name-block{
+        width: auto;
+        float: left;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;padding-top: 11px;
+        display: block;
+    }
+    .attachment-button{
+        width: auto;
+        float: right;
+        padding:12px 17px ;
+        display: block;
+        color: #231F20;
+        border-radius: 100px;
+        font-weight: 600;
+        background: #fff;
+        svg{
+            float: left;
+            margin-right: 6px;
+            display: block;
+        }
+    }
+}
+
+
+.tabbed-content {
+
+margin-top: 27px;
+    width: 100%;
+
+float: left;
+  }
+  
+  .tabs ul {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+        float: left;
+        width: 100%;
+        display: block;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 20px 30px;
+        grid-auto-rows: minmax(0px, auto);
+        li {
+            float: left;
+            width: 100%;
+            a {    background: #F6F6F6;
+                border-radius: 20px;
+                float: left;
+                width: 100%;
+                padding: 20px 0;
+                text-align: center;
+                .tittle-block{
+                    width: 100%;
+                    font-size: 16px;
+                    color: #231F20;
+                    float: left;
+                    text-align: center;
+                    padding-bottom: 30px;
+                }
+                .content-block{
+                    width: 100%;
+                    font-size: 16px;
+                    padding-top: 23px;
+           font-weight: 400;
+                    color: #A2A0A1;
+                    float: left;
+                    text-align: center;
+                }
+                .active-tick{
+                    width: 12px;
+                    display: none;
+                    margin: 0px auto;
+                }
+                .upload-icon{
+                    width: 21px;
+                    margin: 0px auto;
+                    display: block;
+                }
+                .content-block-noraml{
+                    display: block;
+                     }
+                    .content-block-active{
+                   display: none;
+                    }
+
+                &:hover{
+                    background: #F6E8E9;
+                    color: #231F20;    border-radius: 20px;
+                    .active-tick{
+                        width: 12px;
+                        margin: 0px auto;
+                        display: block;
+                    }
+                    .upload-icon{
+                        display: none;
+                    }
+                    .content-block-active{
+                        display: block;
+                         }
+                         .content-block-noraml{
+                            display: none;
+                             }
+                }
+                &.active{
+                    background: #F6E8E9;
+                    color: #231F20;    border-radius: 20px;
+                    .active-tick{
+                        width: 12px;
+                        margin: 0px auto;
+                        display: block;
+                    }
+                    .upload-icon{
+                        display: none;
+                    }
+                    .content-block-active{
+                   display: block;
+                    }
+                    .content-block-noraml{
+                        display: none;
+                         }
+                }
+              }
+            
+              }
+  }
+
+  .tabs ul li a:hover, .tabs ul li a.active {
+    background: #F6E8E9;
+    color: #231F20;    border-radius: 20px;
+  }
+  
+  .item {
+    margin-bottom: 2px;
+  }
+  .item::before {
+    cursor: pointer;
+    font-weight: bold;
+    background: #eee;
+    padding: 0.5em;
+    display: block;
+  }
+  .item.active::before {
+    background: #444;
+    color: #eee;
+  }
+  .item.active .item-content {
+    padding: 1em;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+
+    .upload-tab-grid{
+        float: left;
+        width: 100%;
+        display: block;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px 30px;
+        grid-auto-rows: minmax(0px, auto)
+    }
+  }
+  
+  @media all and (min-width: 980px) {
+    .item.active .item-content {
+      padding-top: 0;
+    }
+  
+    .tabs-side .tabs li {
+      margin-bottom: 2px;
+    }
+  }
+  /* 
+  The project specific CSS starts here
+  This is the minimum CSS that you will need in order for this to work
+  */
+  .tabbed-content .tabs {
+    display: none;
+  }
+  .tabbed-content .item {
+    min-height: 2em;
+  }
+  .tabbed-content .item::before {
+    content: attr(data-title);
+  }
+  .tabbed-content .item .item-content {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+  }
+  .tabbed-content .item.active .item-content {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+  }
+  
+  @media all and (min-width: 980px) {
+    .tabbed-content .tabs {
+      display: block;
+    }
+    .tabbed-content .tabs li {
+      display: inline-block;
+    }
+    .tabbed-content .tabs li a {
+      display: block;
+    }
+    .tabbed-content .item {
+      min-height: 0;
+    }
+    .tabbed-content .item::before {
+      display: none;
+    }
+    .tabbed-content.tabs-side .tabs {
+      width: 150px;
+      float: left;
+    }
+    .tabbed-content.tabs-side .tabs li {
+      display: block;
+    }
+    .tabbed-content.tabs-side .item {
+      margin-left: 150px;
+    }
+  }
+}
+
+.draft-id-block{
+    float: left;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 20px 0 35px;
+    text-align: center;
+}
