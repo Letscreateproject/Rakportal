@@ -1,68 +1,77 @@
-.upload-menmebr-main-outer{
-    padding:60px 237px;
-.acctment-bar{
-    width: 100%;
-    float: left;
-    display: block;
-    background: #E52629;
-    border-radius: 20px;
-    padding: 14px 28px;
-    .name-block{
-        width: auto;
+.upload-menmebr-main-outer {
+    padding: 60px 237px;
+
+    .acctment-bar {
+        width: 100%;
         float: left;
-        font-size: 18px;
-        font-weight: bold;
-        color: #fff;padding-top: 11px;
         display: block;
-    }
-    .attachment-button{
-        width: auto;
-        float: right;
-        padding:12px 17px ;
-        display: block;
-        color: #231F20;
-        border-radius: 100px;
-        font-weight: 600;
-        background: #fff;
-        svg{
+        background: #E52629;
+        border-radius: 20px;
+        padding: 14px 28px;
+
+        .name-block {
+            width: auto;
             float: left;
-            margin-right: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            padding-top: 11px;
             display: block;
         }
+
+        .attachment-button {
+            width: auto;
+            float: right;
+            padding: 12px 17px;
+            display: block;
+            color: #231F20;
+            border-radius: 100px;
+            font-weight: 600;
+            background: #fff;
+
+            svg {
+                float: left;
+                margin-right: 6px;
+                display: block;
+            }
+        }
     }
-}
 
 
-.tabbed-content {
+    .tabbed-content {
 
-margin-top: 27px;
-    width: 100%;
+        margin-top: 27px;
+        width: 100%;
 
-float: left;
-  }
-  
-  .tabs ul {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
+        float: left;
+    }
+
+    .tabs ul {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
         float: left;
         width: 100%;
         display: block;
-        margin-top: 30px;
+
         display: grid;
         grid-template-columns: repeat(4, 1fr) !important;
         gap: 20px 30px;
         grid-auto-rows: minmax(0px, auto);
+
         li {
             float: left;
             width: 100%;
-            a {    background: #F6F6F6;
+
+            a {
+                background: #F6F6F6;
                 border-radius: 20px;
                 float: left;
                 width: 100%;
                 padding: 20px 0;
                 text-align: center;
-                .tittle-block{
+
+                .tittle-block {
                     width: 100%;
                     font-size: 16px;
                     color: #231F20;
@@ -70,179 +79,474 @@ float: left;
                     text-align: center;
                     padding-bottom: 30px;
                 }
-                .content-block{
+
+                .content-block {
                     width: 100%;
                     font-size: 16px;
                     padding-top: 23px;
-           font-weight: 400;
+                    font-weight: 400;
                     color: #A2A0A1;
                     float: left;
                     text-align: center;
                 }
-                .active-tick{
+
+                .active-tick {
                     width: 12px;
                     display: none;
                     margin: 0px auto;
                 }
-                .upload-icon{
+
+                .upload-icon {
                     width: 21px;
                     margin: 0px auto;
                     display: block;
                 }
-                .content-block-noraml{
+
+                .content-block-noraml {
                     display: block;
-                     }
-                    .content-block-active{
-                   display: none;
+                }
+
+                .content-block-active {
+                    display: none;
+                    color: #231F20;
+                }
+
+                &:hover {
+                    background: #F6E8E9;
+                    color: #231F20;
+                    border-radius: 20px;
+
+                    .active-tick {
+                        width: 12px;
+                        margin: 0px auto;
+                        display: block;
                     }
 
-                &:hover{
-                    background: #F6E8E9;
-                    color: #231F20;    border-radius: 20px;
-                    .active-tick{
-                        width: 12px;
-                        margin: 0px auto;
-                        display: block;
-                    }
-                    .upload-icon{
+                    .upload-icon {
                         display: none;
                     }
-                    .content-block-active{
+
+                    .content-block-active {
                         display: block;
-                         }
-                         .content-block-noraml{
-                            display: none;
-                             }
-                }
-                &.active{
-                    background: #F6E8E9;
-                    color: #231F20;    border-radius: 20px;
-                    .active-tick{
-                        width: 12px;
-                        margin: 0px auto;
-                        display: block;
-                    }
-                    .upload-icon{
-                        display: none;
-                    }
-                    .content-block-active{
-                   display: block;
-                    }
-                    .content-block-noraml{
-                        display: none;
-                         }
-                }
-              }
             
-              }
-  }
+                    }
 
-  .tabs ul li a:hover, .tabs ul li a.active {
-    background: #F6E8E9;
-    color: #231F20;    border-radius: 20px;
-  }
-  
-  .item {
-    margin-bottom: 2px;
-  }
-  .item::before {
-    cursor: pointer;
-    font-weight: bold;
-    background: #eee;
-    padding: 0.5em;
-    display: block;
-  }
-  .item.active::before {
-    background: #444;
-    color: #eee;
-  }
-  .item.active .item-content {
-    padding: 1em;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
+                    .content-block-noraml {
+                        display: none;
+                    }
+                }
 
-    .upload-tab-grid{
-        float: left;
-        width: 100%;
+                &.active {
+                    background: #F6E8E9;
+                    color: #231F20;
+                    border-radius: 20px;
+
+                    .active-tick {
+                        width: 12px;
+                        margin: 0px auto;
+                        display: block;
+                    }
+
+                    .upload-icon {
+                        display: none;
+                    }
+
+                    .content-block-active {
+                        display: block;
+                    }
+
+                    .content-block-noraml {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .tabs ul li a:hover,
+    .tabs ul li a.active {
+        background: #F6E8E9;
+        color: #231F20;
+        border-radius: 20px;
+    }
+
+    .item {
+        margin-bottom: 2px;
+    }
+
+    .item::before {
+        cursor: pointer;
+        font-weight: bold;
+        background: #eee;
+        padding: 0.5em;
         display: block;
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 20px 30px;
-        grid-auto-rows: minmax(0px, auto)
     }
-  }
-  
-  @media all and (min-width: 980px) {
+
+    .item.active::before {
+        background: #444;
+        color: #eee;
+    }
+
     .item.active .item-content {
-      padding-top: 0;
+        padding: 1em;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        -ms-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+
+        .upload-tab-grid {
+            float: left;
+            width: 100%;
+            display: block;
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 20px 30px;
+            grid-auto-rows: minmax(0px, auto);
+
+            .attachment-block {
+
+                width: 147px;
+                border-radius: 20px;
+                float: left;
+                position: absolute;
+                bottom: 3px;
+                left: 0;
+                display: block;
+
+                .content-block {
+                    border-radius: 20px;
+                    width: 100%;
+                    padding: 7px 15px;
+                    position: relative;
+                    font-size: 11px;
+                    color: #231F20;
+                    float: left;
+                    background: #F6E8E9;
+
+                    .close-icon {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 13px;
+                    }
+                }
+            }
+
+            padding-top: 0;
+        }
+
+        .tabs-side .tabs li {
+            margin-bottom: 2px;
+        }
     }
-  
-    .tabs-side .tabs li {
-      margin-bottom: 2px;
-    }
-  }
-  /* 
+
+    /* 
   The project specific CSS starts here
   This is the minimum CSS that you will need in order for this to work
   */
-  .tabbed-content .tabs {
-    display: none;
-  }
-  .tabbed-content .item {
-    min-height: 2em;
-  }
-  .tabbed-content .item::before {
-    content: attr(data-title);
-  }
-  .tabbed-content .item .item-content {
-    opacity: 0;
-    visibility: hidden;
-    height: 0;
-  }
-  .tabbed-content .item.active .item-content {
-    opacity: 1;
-    visibility: visible;
-    height: auto;
-  }
-  
-  @media all and (min-width: 980px) {
     .tabbed-content .tabs {
-      display: block;
+        display: none;
     }
-    .tabbed-content .tabs li {
-      display: inline-block;
-    }
-    .tabbed-content .tabs li a {
-      display: block;
-    }
+
     .tabbed-content .item {
-      min-height: 0;
+        min-height: 2em;
     }
+
     .tabbed-content .item::before {
-      display: none;
+        content: attr(data-title);
     }
-    .tabbed-content.tabs-side .tabs {
-      width: 150px;
-      float: left;
+
+    .tabbed-content .item .item-content {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
     }
-    .tabbed-content.tabs-side .tabs li {
-      display: block;
+
+    .tabbed-content .item.active .item-content {
+        opacity: 1;
+        visibility: visible;
+        height: auto;
     }
-    .tabbed-content.tabs-side .item {
-      margin-left: 150px;
+
+    .draft-id-block {
+        float: left;
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 20px 0 35px;
+        text-align: center;
     }
-  }
+
+    .upload-memeber-content-block {
+        width: 100%;
+        float: left;
+        border-radius: 20px;
+        padding: 26px 20px 32px;
+        margin-top: 40px;
+        background: #F6F6F6;
+        display: block;
+
+        .passport-number-block {
+            width: 100%;
+            float: left;
+            display: block;
+        }
+
+        .passport-2-grid {
+            float: left;
+            width: 100%;
+            display: block;
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 20px 30px;
+            grid-auto-rows: minmax(0px, auto);
+            padding-top: 0;
+        }
+    }
+
+.submit-button{
+    width: auto;
+    float: right;
+    display: block;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    a{
+        width: 100%;
+        float: left;
+        padding:14px 60px;
+        background: #E52629;
+        font-size:19px ;
+        border-radius: 67px;
+        display: block;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        svg{
+            float: right;
+            display: block;
+            margin-left: 10px;
+            margin-top:4px;
+        }
+        &:hover{
+            background: #000;
+        }
+    }
 }
 
-.draft-id-block{
-    float: left;
-    text-align: center;
+.attachment-light-bg{
+    background: #F5F5F5;
+    .name-block{
+    color: #231F20;
+    }
+}
+ .tabbed-content .item{
+    display: none;
+}
+ .tabbed-content .item.active{
     display: block;
-    width: 100%;
-    padding: 20px 0 35px;
-    text-align: center;
+}
+.pluse-acc{
+    display: none;
+}
+.minus-acc{
+display: none;
+}
+.only-mob-acc{
+display: none;
+}
+
+    @media all and (min-width: 980px) {
+        .tabbed-content .tabs {
+            display: block;
+        }
+
+        .tabbed-content .tabs li {
+            display: inline-block;
+        }
+
+        .tabbed-content .tabs li a {
+            display: block;
+        }
+
+        .tabbed-content .item {
+            min-height: 0;
+        }
+
+        .tabbed-content .item::before {
+            display: none;
+        }
+
+        .tabbed-content.tabs-side .tabs {
+            width: 150px;
+            float: left;
+        }
+
+        .tabbed-content.tabs-side .tabs li {
+            display: block;
+        }
+
+        .tabbed-content.tabs-side .item {
+            margin-left: 150px;
+        }
+
+    }
+ 
+}
+
+
+@media only screen and (max-width:1200px) {
+    .upload-menmebr-main-outer {
+        padding: 60px 30px;
+    }
+}
+
+@media only screen and (max-width:980px) {
+    .upload-menmebr-main-outer {
+        padding: 60px 0px 0;
+    }
+    .upload-menmebr-main-outer .item {
+        margin-bottom:10px;
+    }
+    .upload-menmebr-main-outer .tabbed-content .item.active .item-content{
+        display: block;
+        padding-top: 0;float: left;
+        width: 100%;        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .upload-menmebr-main-outer .tabbed-content .item.active{
+        background: #F6E8E9;   
+        border: 1px solid #F6E8E9; 
+    }
+    .upload-menmebr-main-outer .tabbed-content .item {
+        display: block;
+        display: block;
+        float: left;
+        width: 100%;
+        background: #FFFFFF;
+        border-radius: 20px;
+        border: 1px solid #D3CCCC;
+    }
+    .upload-menmebr-main-outer .tabbed-content .item .item-content{
+        display:none;
+    }
+
+    .upload-menmebr-main-outer .item.active::before {
+    display: none;
+    }
+    .upload-menmebr-main-outer .item::before {
+        cursor: pointer;
+        font-weight: bold;
+        background: #F6E8E9;
+        padding: 0.5em;
+        display: block;
+        float: left;
+        display: none;
+        width: 100%;
+    }.upload-menmebr-main-outer .only-mob-acc{
+        display: block;
+        width: 100%;
+        padding: 15px 15px;
+        float: left;
+
+    }
+
+    
+    .upload-menmebr-main-outer .tabbed-content .item{
+        .pluse-acc{
+            display: block;
+            width: 10px;      margin-top: 7px;    float: left;
+        }
+        .minus-acc{
+            display: none;
+            
+            
+        }
+        .head-text{
+            width: 100%;
+            float: left;
+            display: block;
+            span{
+                float: left;
+                color: #231F20;
+                margin-left: 10px;
+                font-size: 16px;
+            }
+        }
+   }
+    .upload-menmebr-main-outer .tabbed-content .item.active{
+         .pluse-acc{
+             display: none;
+         }
+         .minus-acc{
+             width: 10px;     color: #E52629;
+             float: left;
+             display: block;
+   margin-top: 7px;
+         }
+         .head-text{
+            span{
+                color: #E52629;
+            }
+        }
+    }
+    .mob-head-right{
+        display: flex;
+        float: right;
+        width: auto;
+        .text{
+            float: left;
+            padding-right: 10px;
+            font-size: 13px;
+            color: #231F20;
+        }
+    }
+    .upload-menmebr-main-outer .item.active .item-content .upload-tab-grid{
+        margin-top: 0;
+    }
+    .upload-menmebr-main-outer .item.active .item-content .upload-tab-grid .attachment-block .content-block {
+
+        background: #ffffff;
+    }
+
+    .upload-menmebr-main-outer .item.active .item-content .form-group input[type="text"], .form-group input {
+        padding: 14px 5px 14px 0px;
+
+    }
+    .upload-menmebr-main-outer .item.active .item-content .upload-tab-grid .attachment-block {
+        bottom: 7px;
+    }
+    .attach-and-tab-outer{
+        background: #F6F6F6;
+        float: left;
+        width: 100%;
+        border-radius: 20px;
+        padding-bottom: 20px;
+    }
+    .upload-menmebr-main-outer .tabbed-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .upload-menmebr-main-outer .submit-button {
+        width: 221px;
+        float: none;
+        margin: 0px auto;
+        display: block;
+  
+        a{
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .upload-menmebr-main-outer .item.active .item-content .upload-tab-grid , .upload-menmebr-main-outer .upload-memeber-content-block .passport-2-grid{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
 }
