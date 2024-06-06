@@ -355,6 +355,301 @@
   line-height: 23px;
 }
 
+.policy-details-outer .confrim-tab-active::before {
+  width: 242%;
+  left: -193%;
+}
+
+.progress .active.confrim-tab-active:after {
+  display: block;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #E52629;
+  border-radius: 10px;
+  position: absolute;
+  left: 46%;
+  bottom: -2px;
+  z-index: 2;
+}
+
+.progress .active.confrim-tab-active .percentage-text {
+  left: 42%;
+}
+
+.travel-iInformation-details-outer {
+  padding: 45px 196px 60px;
+}
+
+.travel-iInformation-details-outer .draft-id-block {
+  text-align: center;
+}
+
+.travel-iInformation-details-outer .travel-info-detail {
+  width: 100%;
+  float: left;
+  border-radius: 20px;
+  padding: 32px;
+  position: relative;
+  background: #F6F6F6;
+  margin-top: 30px;
+}
+
+.travel-iInformation-details-outer .travel-info-detail .travel-confirm-info-grid {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  float: left;
+  width: 100%;
+  display: block;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3] !important;
+      grid-template-columns: repeat(3, 1fr) !important;
+  gap: 15px 15px;
+  grid-auto-rows: minmax(0px, auto);
+}
+
+.travel-iInformation-details-outer .travel-info-detail .travel-confirm-info-grid .travel-confirm-grid-inner {
+  width: 100%;
+  float: left;
+  display: block;
+  border-radius: 20px;
+  background: #FFFFFF;
+  padding: 14px 17px;
+  line-height: 23px;
+}
+
+.travel-iInformation-details-outer .travel-info-detail .travel-confirm-info-grid .travel-confirm-grid-inner p {
+  width: 100%;
+  float: left;
+  display: block;
+  font-size: 14px;
+  color: #231F20;
+  line-height: 16px;
+}
+
+.travel-iInformation-details-outer .travel-info-detail .travel-confirm-info-grid .travel-confirm-grid-inner p span {
+  font-size: 10px;
+  float: none;
+  width: auto;
+  padding-top: 0;
+  display: inline;
+}
+
+.travel-iInformation-details-outer .travel-info-detail .travel-confirm-info-grid .travel-confirm-grid-inner span {
+  width: 100%;
+  float: left;
+  display: block;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #E52629;
+}
+
+.edit-absolute {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
+
+.travel-detail-namelist {
+  width: 100%;
+  float: left;
+  border-radius: 20px;
+  padding: 32px;
+  position: relative;
+  background: #F6F6F6;
+  margin: 20px 0;
+}
+
+.travel-detail-namelist .head-text-block {
+  width: 100%;
+  float: left;
+  display: block;
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+.travel-detail-namelist .head-text-block span {
+  color: #E52629;
+}
+
+.travel-detail-namelist .travel-row-block {
+  width: 100%;
+  float: left;
+  display: block;
+  padding: 14px 20px;
+  font-size: 16px;
+  color: #231F20;
+  background: #fff;
+  margin-top: 8px;
+  border-radius: 20px;
+}
+
+.travel-detail-namelist .travel-row-block span {
+  padding-right: 10px;
+}
+
+.travel-premium-block {
+  width: 100%;
+  float: left;
+  border-radius: 20px;
+  padding: 32px;
+  position: relative;
+  margin-bottom: 20px;
+  background: #F6F6F6;
+}
+
+.travel-premium-block .premium-head {
+  width: 100%;
+  float: left;
+  display: block;
+  font-size: 20px;
+}
+
+.travel-premium-block .premium-content-block {
+  width: 100%;
+  float: left;
+  display: block;
+  padding-top: 20px;
+}
+
+.travel-premium-block .premium-content-block p {
+  width: 100%;
+  float: left;
+  display: block;
+  font-size: 14px;
+  color: #231F20;
+}
+
+.travel-premium-block .premium-content-block span {
+  width: 100%;
+  float: left;
+  display: block;
+  font-size: 10px;
+  color: #231F20;
+}
+
+.travel-premium-block .premium-content-block .price-block {
+  width: 100%;
+  float: left;
+  display: block;
+  font-size: 29px;
+  padding-top: 7px;
+  color: #E52629;
+  font-weight: 600;
+}
+
+.travel-info-radio-block {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 40px;
+}
+
+.travel-info-radio-block p {
+  width: 100%;
+  float: left;
+  display: block;
+  padding-bottom: 20px;
+  font-size: 13px;
+  color: #231F20;
+  line-height: 20px;
+}
+
+.travel-info-radio-block .radio-button-container {
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  position: relative;
+  padding-left: 29px;
+  line-height: 25px;
+  margin-bottom: 12px;
+  margin-right: 24px;
+  margin-left: 0;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  float: left;
+}
+
+.travel-info-radio-block .radio-button-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.travel-info-radio-block .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 21px;
+  width: 21px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: 1px solid #E52629;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.travel-info-radio-block .radio-button-container input:checked ~ .checkmark {
+  background-color: #fff;
+  border-color: #E52629;
+}
+
+.travel-info-radio-block .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.travel-info-radio-block .radio-button-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.travel-info-radio-block .radio-button-container .checkmark:after {
+  top: 5.33px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #E52629;
+}
+
+.proceed-pay-button {
+  width: 100%;
+  float: left;
+  display: block;
+  margin-top: 20px;
+}
+
+.proceed-pay-button a {
+  width: auto;
+  float: right;
+  padding: 14px 44px;
+  background: #E52629;
+  font-size: 17px;
+  border-radius: 67px;
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.proceed-pay-button a svg {
+  float: right;
+  margin-left: 7px;
+  margin-top: 2px;
+}
+
+.proceed-pay-button a:hover {
+  background: #000;
+}
+
 @media only screen and (max-width: 1300px) {
   .onboard-main-inner-outer .outonboard-coverage-accrodion .onbard-sub-head {
     font-size: 19px;
@@ -407,6 +702,9 @@
     margin-top: 1px;
     margin-left: 5px;
     float: right;
+  }
+  .travel-iInformation-details-outer {
+    padding: 45px 50px 60px;
   }
 }
 
@@ -465,6 +763,42 @@
   }
   .total-premium-acc-body {
     padding: 0px 20px 20px 15px;
+  }
+  .travel-iInformation-details-outer .travel-info-detail .travel-confirm-info-grid .travel-confirm-grid-inner span {
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-top: 0;
+  }
+  .travel-iInformation-details-outer .travel-info-detail .travel-confirm-info-grid .travel-confirm-grid-inner p {
+    width: 50%;
+    float: left;
+  }
+  .travel-iInformation-details-outer .travel-info-detail .travel-confirm-info-grid {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    gap: 5px 8px;
+  }
+  .travel-iInformation-details-outer .travel-info-detail {
+    padding: 32px 20px;
+  }
+  .proceed-pay-button a {
+    width: 230px;
+    float: none;
+    padding: 14px 27px;
+    margin: 0px auto;
+  }
+  .proceed-pay-button {
+    margin-top: 30px;
+  }
+  .travel-iInformation-details-outer {
+    padding: 45px 0px 30px;
+  }
+  .travel-detail-namelist, .travel-premium-block {
+    padding: 32px 20px;
+  }
+  .policy-details-outer .confrim-tab-active::before {
+    width: 248%;
   }
 }
 
