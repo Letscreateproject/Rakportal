@@ -4143,4 +4143,124 @@ footer .footer-main-bottom .footer-2-bottom .footer-social-icons ul li a:hover {
         grid-template-columns: repeat(1, 1fr) !important;
   }
 }
+
+.thank-uou-outer {
+  width: 370px;
+  margin: 0px auto;
+}
+
+.thank-uou-outer .thank-you-inner {
+  width: 100%;
+  float: left;
+  display: block;
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px;
+}
+
+.thankyou-top-icon {
+  width: 98px;
+  margin: 0px auto;
+}
+
+.thankyou-main-head {
+  width: 100%;
+  float: left;
+  font-weight: bold;
+  padding: 20px 0 15px;
+  color: #2F2F2F;
+  font-size: 35px;
+  display: block;
+  text-align: center;
+}
+
+.thank-you-sub-text {
+  width: 204px;
+  margin: 0px auto;
+}
+
+.thank-you-sub-text p {
+  width: 100%;
+  float: left;
+  display: block;
+  font-size: 19px;
+  color: #231F20;
+  line-height: 25px;
+  text-align: center;
+}
+
+.ok-button-block {
+  width: 100px;
+  margin: 0px auto;
+}
+
+.ok-button-block a {
+  width: 100%;
+  float: left;
+  background: #000;
+  color: #ffff;
+  margin-top: 30px;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 84px;
+  padding: 13px 25px;
+}
+
+.ok-button-block a:hover {
+  background: #E52629;
+}
+
+.ok-button-block a svg {
+  float: right;
+  margin-top: 3px;
+}
+
+.payment-suess-outer {
+  width: 800px;
+}
+
+.payment-suess-outer .ok-button-block a {
+  background: #E52629;
+}
+
+.payment-suess-outer .ok-button-block a:hover {
+  background: #000;
+}
+
+.payment-suess-outer .thank-you-sub-text {
+  width: 380px;
+}
+
+.payment-cancel-outer {
+  width: 800px;
+}
+
+.payment-cancel-outer .thank-you-sub-text {
+  width: 543px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .payment-cancel-outer {
+    width: 80%;
+  }
+  .thankyou-main-head {
+    font-size: 30px;
+  }
+  .payment-cancel-outer .thank-you-sub-text {
+    width: 90%;
+  }
+  .thank-you-sub-text {
+    width: 90%;
+  }
+  .payment-suess-outer {
+    width: 80%;
+  }
+  .thankyou-top-icon {
+    width: 80px;
+  }
+  .payment-suess-outer .thank-you-sub-text {
+    width: 90%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
